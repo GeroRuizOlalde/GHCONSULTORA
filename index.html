@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GH - Consultora Ambiental</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-landing">
+        <div class="wrap-logo">
+            <h1><a href="#" class="logo-header">GH</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo",window.scrollY>0);
+                })
+        </script>
+    </header>
+
+    
+
+    <section class="hero-section">
+        <div class="wrap-hero-section">
+            <h1>Consultora Ambiental</h1>
+            <p>Somos expertos en consultoría ambiental, comprometidos con la sostenibilidad y protección del medio ambiente. Ofrecemos soluciones personalizadas para cumplir con regulaciones y promover prácticas responsables. Únete a nosotros para un futuro más verde.</p>
+            
+            <div class="wrap-cta">  
+                <a href="#servicios" class="cta-a">Ver mas...</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section logos-section">
+        <div class="wrap-logos-section">
+            <img src="img/logo-sanjuan-color.png" alt="" class="logo-brand">
+            <img src="img/argentina-presidencia.png" alt="" class="logo-brand">
+            <img src="img/Barrick_Gold_logo.svg.png" alt="" class="logo-brand">
+            <img src="img/logo-calnig.png" alt="" class="logo-brand">
+        </div>
+    </section>
+
+    <section class="section servicio-section" id="servicios">
+        <div class="wrap-title-section">
+            <h2>Categorias de Servicios</h2>
+        </div>
+        <div class="wrap-servicios-section">
+            <a href="" class="item-servicios-section">
+                <img src="img/1.jpg" alt="">
+                    <p>Evaluacion sobre Impacto Ambiental</p>
+                </img>
+            </a>
+
+            <a href="" class="item-servicios-section">
+                <img src="img/2.jpg" alt="">
+                    <p>Evaluacion sobre la calidad del agua</p>
+                </img>
+            </a>
+            <a href="" class="item-servicios-section">
+                <img src="img/3.jpg" alt="">
+                    <p>Evaluacion sobre Emisiones Gaseosas</p>
+                </img>
+            </a>
+            <a href="" class="item-servicios-section">
+                <img src="img/4.jpg" alt="">
+                    <p>Evaluacion sobre la Calidad del Aire</p>
+                </img>
+            </a>
+            <a href="" class="item-servicios-section">
+                <img src="img/5.jpg" alt="">
+                    <p>Evaluacion sobre Suelos y Sedimentos</p>
+                </img>
+            </a>
+            <a href="" class="item-servicios-section">
+                <img src="img/6.jpg" alt="">
+                    <p>Evaluacion sobre Ruido Ambiental</p>
+                </img>
+            </a>
+            <a href="" class="item-servicios-section">
+                <img src="img/7.jpg" alt="">
+                    <p>Evaluacion sobre Vibraciones</p>
+                </img>
+            </a>
+            <a href="" class="item-servicios-section">
+                <img src="img/8.jpg" alt="">
+                    <p>Gestion integral de Residuos</p>
+                </img>
+            </a>
+            <a href="" class="item-servicios-section">
+                <img src="img/9.jpg" alt="">
+                    <p>Asesoramiento Ambiental</p>
+                </img>
+            </a>
+        </div>
+    </section>
+
+    <section class="section two-column-section">
+
+        <div class="wrap-title-section">
+          <h2>Características de nuestros Servicios</h2>
+        </div>
+    
+        <div class="wrap-two-column">
+          <div class="wrap-img_two-column">
+            <img src="img/Oficina.jpg" alt="">
+          </div>
+    
+          <div class="wrap-img_two-column">
+            <div class="wrap-text-column">
+              <h3>Más Características</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis, nemo distinctio beatae quod molestiae illo dolores voluptas quae, autem corrupti maiores similique earum eaque aliquam at modi doloribus. Nam officiis sequi modi! Ipsum, vel!</p>
+              <div class="wrap-cta">
+                <a href="#contacto" class="cta-a">Ver mas</a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+
+    <section class="section two-column-section form" id="contacto">
+        <div class="wrap-title-section">
+            <h2>Formulario de contacto</h2>
+        </div>
+
+
+        <div class="wrap-two-column">
+
+            <div class="wrap-img_two-column">
+              <div class="wrap-text-column">
+                <h3>Contacta con nosotros</h3>
+      
+                <form action="procesar_formulario.php" method="post" class="form">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" name="nombre" id="nombre" required="">
+                  <br><br>
+                  
+                  <label for="asunto">Asunto:</label>
+                  <input type="text" name="asunto" id="asunto" required="">
+                  <br><br>
+                  
+                  <label for="mensaje">Mensaje:</label>
+                  <br>
+                  <textarea name="mensaje" id="mensaje" rows="4" cols="40" required=""></textarea>
+                  <br><br>
+                  
+                  <input type="submit" value="Enviar" class="cta-a">
+                </form>
+      
+              </div>
+            </div>
+      
+            <div class="wrap-img_two-column">
+              <img src="img/contacta.jpg" alt="">
+            </div>
+          </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="wrap-footer-section">
+            <div class="wrap-social-logos">
+                <ul>
+                    <li><a href=""><img src="img/Facebook_f_logo_(2019).svg.webp" alt="" class="social-logo"></a></li>
+                    <li><a href=""><img src="img/instagram-png.png" alt="" class="social-logo"></a></li>
+                    <li><a href=""><img src="img/LinkedIn_logo_initials.png" alt="" class="social-logo"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu-footer-section">
+            <div class="footer-creds">
+                <p>©copyright 2023 - GH Consultora Ambiental - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=542645051024&text=Hola,%20que%20tal!" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+</body>
+</html>
